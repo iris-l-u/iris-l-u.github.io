@@ -1,0 +1,32 @@
+/* <!-- index/homepage css --> */
+
+.content {
+    background-color: #FBFBFB;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+html body {
+    height: 100%;
+    position: relative;
+}
+
+img {
+    position: fixed;
+    width: 40%;
+    left: 30%;
+    top: 10%;
+    /* left: 25%;
+    top: 20%;
+    width: 40%; */
+}
+
+img:active {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+img:hover {
+    cursor: default;
+}

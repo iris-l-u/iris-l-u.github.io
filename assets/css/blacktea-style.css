@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Thin.ttf);
+    font-weight: thin;
+}
+
+html,
+body {
+    height: 92%;
+}
+
+.content {
+    position: relative;
+    top: 8%;
+    display: flex;
+    flex-direction: row;
+}
+
+#column1 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    top: 12%;
+    width: 38%;
+}
+
+#column2 {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #424244;
+    width: 62%;
+    height: 90.5%;
+}
+
+img {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    display: flex;
+    justify-items: center;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: bold;
+    color: #424244;
+    position: relative;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.description {
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+#button {
+    background-color: #FFFFFF;
+    border: 5px solid black;
+    display: inline-block;
+    padding: 16px 30px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #424244;
+    text-decoration: none;
+    position: absolute;
+    left: 10%;
+    bottom: 8%;
+}
+
+#button:hover {
+    background-color: #D0D0D0;
+}
+
+#button:active {
+    position: absolute;
+    left: 10%;
+    bottom: 7.8%
+}
+
+.image {
+    padding-top: 25%;
+    transform: translatey(0px);
+    animation-name: float;
+    animation-duration: 2.5s;
+    transition-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
