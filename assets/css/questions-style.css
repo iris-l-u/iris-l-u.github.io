@@ -139,9 +139,36 @@ div div img {
 }
 
 div div img:hover {
+    transform: translatey(0px);
+    animation-name: float;
+    animation-duration: 6s;
+    transition-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    20% {
+        transform: translatey(-20px);
+    }
+    50% {
+        transform: translatey(20px);
+    }
+    80% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+/* div div img:hover {
     opacity: 0.5;
     transition: 0.25s;
-}
+} */
 
 div div div img {
     width: 30%;
