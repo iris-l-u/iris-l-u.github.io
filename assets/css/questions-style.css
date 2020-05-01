@@ -67,6 +67,11 @@ h1 {
     margin-top: 10%;
 }
 
+#button1:hover :active a {
+    background-color: #EAA6A5;
+    text-decoration: none;
+}
+
 #button2 {
     background-color: #FBACBE;
     border: 5px solid #424244;
